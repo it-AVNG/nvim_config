@@ -31,8 +31,20 @@ return {
   {
     "nvimtools/none-ls.nvim",
     ft = { python, lua, javascript, dockerfile },
-    opts = function ()
+    opts = function()
       return require "configs.none-ls"
-    end
+    end,
+  },
+  {
+    "echasnovski/mini.nvim",
+    version = false,
+    lazy = false,
+    config = function()
+      require("mini.animate").setup({})
+      require("mini.indentscope").setup {
+        symbol = "|",
+        options = { try_as_border = true },
+      }
+    end,
   },
 }
