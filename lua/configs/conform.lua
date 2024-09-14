@@ -4,7 +4,7 @@ local options = {
     css = { "prettier" },
     html = { "prettier" },
     python = { "black" },
-    javascript = {"ast-grep"}
+    javascript = { "ast-grep" },
   },
 
   -- format_on_save = {
