@@ -1,11 +1,12 @@
 -- load defaults i.e lua_lsp
 require("nvchad.configs.lspconfig").defaults()
-
+-- local capabilities = require('cmp_nvim_lsp').default_capabilities()
 local lspconfig = require "lspconfig"
 
 -- EXAMPLE
 local servers = { "html", "cssls", "lua_ls", "pyright", "ruff_lsp", "basedpyright", "eslint" }
-local nvlsp = require "nvchad.configs.lspconfig"
+-- local nvlsp = require "nvchad.configs.lspconfig"
+local nvlsp = require('cmp_nvim_lsp').default_capabilities()
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do
