@@ -6,8 +6,9 @@
 
 local options = {
   base46 = {
-    theme = "gruvbox",
-
+    theme = "tokyonight",
+    theme_toggle = { "tokyonight", "flexoki-light" },
+    -- transparent = true,
     l_override = {
       Comment = { italic = true },
       ["@comment"] = { italic = true },
@@ -15,8 +16,9 @@ local options = {
   },
 
   ui = {
+    -- transparent = true,
     nvdash = {
-      load_on_startup = true,
+      -- load_on_startup = true,
       header = {
         "                            ",
         "     ▄▄         ▄ ▄▄▄▄▄▄▄   ",
@@ -57,7 +59,7 @@ return options
 -- local M = {}
 --
 -- M.base46 = {
---   theme = "gruvbox",
+--   theme = "doomchad",
 --
 --   l_override = {
 --     Comment = { italic = true },
