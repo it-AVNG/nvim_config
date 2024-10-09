@@ -4,7 +4,8 @@ local options = {
     css = { "prettier" },
     html = { "prettier" },
     python = { "black" },
-    javascript = { "ast-grep" },
+    javascript = { "biome" },
+    go = { "gofumpt" },
   },
 
   -- format_on_save = {

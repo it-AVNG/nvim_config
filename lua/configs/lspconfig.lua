@@ -15,6 +15,7 @@ local servers = {
   "ast_grep",
   "eslint",
   "vimls",
+  "gopls",
   "golangci_lint_ls",
 }
 local nvlsp = require "nvchad.configs.lspconfig"
