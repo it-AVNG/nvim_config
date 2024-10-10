@@ -6,7 +6,7 @@
 
 local options = {
   base46 = {
-    theme = "tokyonight",
+    theme = "flexoki-light",
     theme_toggle = { "tokyonight", "flexoki-light" },
     -- transparent = true,
     l_override = {
@@ -16,9 +16,8 @@ local options = {
   },
 
   ui = {
-    -- transparent = true,
+    transparent = true,
     nvdash = {
-      -- load_on_startup = true,
       header = {
         "                            ",
         "     ▄▄         ▄ ▄▄▄▄▄▄▄   ",
