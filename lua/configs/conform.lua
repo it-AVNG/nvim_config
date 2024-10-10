@@ -6,6 +6,7 @@ local options = {
     python = { "black" },
     javascript = { "biome" },
     go = { "gofumpt" },
+    markdown = { "mdformat" },
   },
 
   -- format_on_save = {
