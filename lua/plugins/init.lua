@@ -25,7 +25,8 @@ return {
         "css",
         "python",
         "yaml",
-        "go"
+        "go",
+        "typescript"
       },
     },
   },
