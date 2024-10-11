@@ -5,6 +5,7 @@ local options = {
     html = { "prettier" },
     python = { "ruff" },
     javascript = { "biome" },
+    typescript = { "biome" },
     go = { "gofumpt" },
     markdown = { "mdformat" },
   },
