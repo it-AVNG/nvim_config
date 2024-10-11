@@ -6,7 +6,8 @@
 
 local options = {
   base46 = {
-    theme = "flexoki-light",
+    theme = "tokyonight",
+    -- transparency = true,
     theme_toggle = { "tokyonight", "flexoki-light" },
     -- transparent = true,
     l_override = {
@@ -14,25 +15,24 @@ local options = {
       ["@comment"] = { italic = true },
     },
   },
-
-  ui = {
-    transparent = true,
-    nvdash = {
-      header = {
-        "                            ",
-        "     ▄▄         ▄ ▄▄▄▄▄▄▄   ",
-        "   ▄▀███▄     ▄██ █████▀    ",
-        "   ██▄▀███▄   ███           ",
-        "   ███  ▀███▄ ███           ",
-        "   ███    ▀██ ███           ",
-        "   ███      ▀ ███           ",
-        "   ▀██ █████▄▀█▀▄██████▄    ",
-        "     ▀ ▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀   ",
-        "                            ",
-        "     Powered By  eovim    ",
-        "                            ",
-      },
+  nvdash = {
+    load_on_startup = true,
+    header = {
+      "                            ",
+      "     ▄▄         ▄ ▄▄▄▄▄▄▄   ",
+      "   ▄▀███▄     ▄██ █████▀    ",
+      "   ██▄▀███▄   ███           ",
+      "   ███  ▀███▄ ███           ",
+      "   ███    ▀██ ███           ",
+      "   ███      ▀ ███           ",
+      "   ▀██ █████▄▀█▀▄██████▄    ",
+      "     ▀ ▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀   ",
+      "                            ",
+      "     Powered By  eovim    ",
+      "                            ",
     },
+  },
+  ui = {
 
     statusline = {
       theme = "vscode_colored", -- default/vscode/vscode_colored/minimal
