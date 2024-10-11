@@ -5,6 +5,7 @@ local opts = {
     null_ls.builtins.code_actions.refactoring,
     null_ls.builtins.diagnostics.staticcheck,
     null_ls.builtins.diagnostics.golangci_lint,
+    null_ls.builtins.diagnostics.semgrep,
     null_ls.builtins.diagnostics.revive,
     null_ls.builtins.diagnostics.mypy,
     null_ls.builtins.diagnostics.prettier,
