@@ -21,7 +21,7 @@ return {
 				lua = { "stylua" },
 				nix = { "nixpkgs-fmt" },
 				php = { "php-cs-fixer" },
-				python = { "ruff" },
+				python = { "ruff_format" },
 				sh = { "shfmt" },
 				typescript = prettier,
 				yaml = prettier,
