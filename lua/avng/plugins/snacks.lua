@@ -4,6 +4,12 @@ return {
   lazy = false,
   ---@type snacks.Config
   opts = {
+    animate = {
+      duration = 20, -- ms per step
+      easing = "linear",
+      fps = 120,
+      enabled = true
+    },
     bigfile = { enabled = true },
     dashboard = { enabled = true },
     explorer = { enabled = true },
@@ -17,7 +23,22 @@ return {
     quickfile = { enabled = true },
     scope = { enabled = true },
     scroll = { enabled = true },
-    statuscolumn = { enabled = true },
+    keymap = { enabled = true },
+    statuscolumn = {
+        left = { "mark", "sign" }, -- priority of signs on the left (high to low)
+        right = { "fold", "git" }, -- priority of signs on the right (high to low)
+        folds = {
+          open = true, -- show open fold icons
+          git_hl = true, -- use Git Signs hl for fold icons
+        },
+        git = {
+          -- patterns to match Git signs
+          patterns = { "GitSign", "MiniDiffSign" },
+        },
+        refresh = 50, -- refresh at most every 50ms
+
+      enabled = true,
+    },
     words = { enabled = true },
     styles = {
       notification = {
