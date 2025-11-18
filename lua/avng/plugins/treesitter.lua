@@ -27,19 +27,19 @@ return {
 			"vimdoc",
 			"c",
 			"python",
-      "rust"
+			"rust",
 		})
 
-    vim.api.nvim_create_autocmd('FileType', {
-    pattern = { 'rust', 'javascript', 'lua', 'python', 'json', 'yaml', 'bash' },
-    callback = function()
-      -- syntax highlighting, provided by Neovim
-      vim.treesitter.start()
-      -- folds, provided by Neovim
-      vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
-      -- indentation, provided by nvim-treesitter
-      vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
-    end,
-  })
+		vim.api.nvim_create_autocmd("FileType", {
+			pattern = { "rust", "javascript", "lua", "python", "json", "yaml", "bash" },
+			callback = function()
+				-- syntax highlighting, provided by Neovim
+				vim.treesitter.start()
+				-- folds, provided by Neovim
+				vim.wo.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+				-- indentation, provided by nvim-treesitter
+				vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+			end,
+		})
 	end,
 }
