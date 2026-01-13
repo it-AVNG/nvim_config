@@ -33,7 +33,7 @@ return {
 				},
 				["clang-format"] = {
 					command = "clang-format",
-					prepend_args = { "--style=file", "-i" },
+					-- prepend_args = { "--style=file", "-i" },
 				},
 				["cmake-format"] = {
 					command = "cmake-format",
