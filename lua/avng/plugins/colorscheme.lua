@@ -59,6 +59,6 @@ return {
 	config = function(_, opts)
 		require("nightfox").setup(opts)
 		-- This command sets the colorscheme when Neovim initializes
-		vim.cmd.colorscheme("nightfox")
+		vim.cmd.colorscheme("terafox")
 	end,
 }
